@@ -19,7 +19,8 @@ export default function App() {
         <br /> <br />
       </form>
       <p>your tip is: ${Number((subTotal * tipPercentage) / 100).toFixed(2)}</p>
-      <p>your grand total is: ${Number(subTotal) + (Number((subTotal * tipPercentage) / 100))}</p>
+      <p>your grand total is: ${Number(subTotal) + (Number((subTotal * tipPercentage) / 100))}</p> 
+      {/*i think i'm really misunderstanding something. we shouldn't have to use Number(), right? */}
     </div>
   );
 }
